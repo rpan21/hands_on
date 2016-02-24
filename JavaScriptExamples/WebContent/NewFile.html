@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method=post action=final.jsp>
+<table>
+<tr>
+<th>UserName</th>
+<td><input type="text" name ="name" required="required" autofocus="autofocus" id="name">
+</td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password" name ="passkey" required="required" id="pass"></td>
+
+<td><span id="msg"> </span>
+</td>
+</tr>
+<tr>
+<th>Role</th>
+<td><select name ="role">
+<option value="adm">Adminstrator</option>
+<option value="user">User</option>
+<option value="dir">Director</option>
+<option value="doc">Doctor</option>
+</select>
+
+
+</td>
+</tr>
+<tr>
+<td colspan="2"><input type = "submit" value ="Submit">
+</td>
+</tr>
+</table>
+
+</form>
+<script type="text/javascript">
+var element=document.getElementById("pass");
+var element1=document.getElementById("msg");
+element.addEventListener('input', function(event){
+	if(element.value.length<=4)
+	{	
+		msgtext="weak";
+		element1.style.color="red";
+	}
+	if(element.value.length>4)
+	{	
+		msgtext="Strong";
+		element1.style.color="green";
+	}
+	msg.innerHTML = msgtext;
+});
+
+
+</script>
+
+</body>
+</html>

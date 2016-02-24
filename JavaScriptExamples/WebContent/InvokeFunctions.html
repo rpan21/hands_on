@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UnderStanding JavaScript Functions</title>
+<script type="text/javascript" src ="Scripts/JSFunctions.js">
+</script>
+
+
+</head>
+<body>
+<h1>
+UnderStanding JavaScript Functions
+</h1>
+<input type ="button" value ="Function1" id="btn1">
+<input type ="button" value ="Function2" id="btn2">
+<input type ="button" value ="Function3" id="btn3">
+<input type ="button" value ="Function4" id="btn4">
+<input type ="button" value ="Function5" id="btn5">
+<input type ="button" value ="Function6" id="btn6" >
+<input type ="button" value ="Function7" id="btn7" >
+<script src="C:/Users/rpan21/Downloads/jquery-1.12.0.min.js">
+$(document).ready(function(){
+
+   $('#btn7').hide();
+
+});
+</script>
+<script type="text/javascript">
+var element1=document.getElementById("btn1");
+var element2=document.getElementById("btn2");
+var element3=document.getElementById("btn3");
+var element4=document.getElementById("btn4");
+var element5=document.getElementById("btn5");
+var element6=document.getElementById("btn6");
+var element7=document.getElementById("btn7");
+
+element1.addEventListener('click', normalFunction);
+element2.addEventListener('click', function(){
+	withArgumentFunction("Function2");
+});
+element3.addEventListener('click', function(){
+	returnFunction("Function3");
+});
+element4.addEventListener('click', function(){
+	
+	takeFunctionArgumentFunction(normalFunction2());
+});
+element5.addEventListener('click', function(){
+	var elemnt = returningFunction();
+	elemnt.addClass();
+	elemnt.removeClass();
+});
+
+
+
+
+</script>
+</body>
+
+
+</html>

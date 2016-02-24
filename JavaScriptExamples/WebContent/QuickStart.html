@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src ="Scripts/First.js">
+</script>
+
+</head>
+<body>
+
+<!--  <input type="button" value="Click" id="btn1" onclick="display()">
+-->
+<input type="button" value="Click" id="btn1" >
+<input type="button" id="btn" value="Click" >
+
+<script type="text/javascript">
+
+var element=document.getElementById("btn");
+var element1=document.getElementById("btn1");
+element1.addEventListener('click', display);
+
+element.addEventListener('click', function(){
+	alert("Hello From Event Listener");
+});
+
+</script>
+
+</body>
+
+</html>
