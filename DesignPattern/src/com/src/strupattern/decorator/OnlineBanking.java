@@ -15,4 +15,8 @@ public class OnlineBanking extends FeatureDecorator {
 		return account.balanceTomaintain()+6000.00;
 	}
 
+	public String prefTiming()
+	{
+		return "9 A.M. To 5 P.M.";
+	}
 }

@@ -14,5 +14,8 @@ public class SocialNetworking extends FeatureDecorator {
 		// TODO Auto-generated method stub
 		return account.balanceTomaintain()+8000.00;
 	}
-
+	public String prefPartner()
+	{
+		return "FaceBook";
+	}
 }

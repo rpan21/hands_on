@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Execution Order</title>
+<script type="text/javascript" src="JS_Libs\jquery-1.12.1.js">
+
+
+</script>
+<script type="text/javascript">
+window.onload=function(){
+	alert("On Load Called");
+}
+
+$(function(){
+alert("On Ready Called");
+});
+
+$(function(){
+	
+	$('#detail').fadeOut(500);
+	$('#detail').fadeIn(500);
+		});
+$(function(){
+
+    
+
+    $("h1").css("color","blue");
+
+    $("#detail").css("font-size","1.3em");
+
+    $("ul>li").css("color","red");
+
+    $('img').on("click",function(){
+    	alert("Image Clicked");
+    });
+
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    $('img').fadeOut(100);
+    $('img').fadeIn(100);
+    
+
+}); 
+
+
+</script>
+
+</head>
+<body>
+<h1>
+JQuery Example
+
+</h1>
+<h3 id="detail"> Ajax Calls</h3>
+<ul>
+<li>UM</li>
+<li>OAD</li>
+
+<li>RDBMS</li>
+
+<li>JAVA</li>
+<li>ANT</li>
+<li>LOG4J</li>
+
+
+
+
+
+</ul>
+<img src="images\devil-04.jpg" height =200 width=200 alt ="Devil">
+
+</body>
+</html>
