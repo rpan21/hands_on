@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>My First Example</title>
+<link rel="stylesheet" type = "text/css" href="css/Styles.css">
+</head>
+<body>
+<header>
+<div id ="hdleft">
+<img alt="Logo" src="images\blue-shad-eye.jpg"></div>
+<div id="hdright">
+<h1>Eye Care</h1></div>
+<nav>
+<ul>
+
+<li><a href="Home.html">Home</a>
+<li><a href="Book.html">Book</a>
+<li><a href="Order.html">Order</a>
+<li><a href="Reviews.html">Reviews</a>
+<li><a href="Contact.html">Contact Us</a>
+
+</ul>
+</nav>
+
+
+</header>
+
+
+<section>
+<form method=post action=final.jsp>
+<table>
+<tr>
+<th>UserName</th>
+<td><input type="text" name ="name" required="required" autofocus="autofocus" id="name"></td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password" name ="passkey" required="required"></td>
+</tr>
+<tr>
+<th>Role</th>
+<td><select name ="role">
+<option value="adm">Adminstrator</option>
+<option value="user">User</option>
+<option value="dir">Director</option>
+<option value="doc">Doctor</option>
+</select>
+
+
+</td>
+</tr>
+<tr>
+<td colspan="2"><input type = "submit" value ="Submit">
+</td>
+</tr>
+</table>
+
+</form>
+<a href='C:/Users/rpan21/Desktop/sh.bat'> ghost
+</a>
+</section>
+<footer>
+<script type="text/javascript">
+    var ele=document.getElementById("name");
+   
+    ele.addEventListener('copy', function(event){
+    	event.preventDefault();
+      alert("Copy Not Allowed");
+        }); 
+     ele.addEventListener('paste', function(event){
+    	event.preventDefault();
+      alert("paste Not Allowed");
+        }); 
+    
+    document.addEventListener('contextmenu', function(event){
+    	event.preventDefault();
+      alert("Right Click Not Allowed");
+        });
+    
+</script>
+Current Time : <script language="javascript">
+ var today = new Date();
+ document.write(today);
+ </script>
+
+</footer>
+</body>
+</html>
